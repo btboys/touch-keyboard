@@ -1,8 +1,10 @@
-import TouchKeyboard from './TouchKeyboard'
+import Keyboard from './TouchKeyboard'
 import '../themes/default.less'
+
+export const TouchKeyboard = Keyboard;
 
 export default {
     install(vue) {
-        vue.component('TouchKeyboard', TouchKeyboard)
+        vue.component('TouchKeyboard', Keyboard)
     }
 }
