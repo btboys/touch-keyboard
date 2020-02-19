@@ -1,6 +1,6 @@
 {
-  "name": "touch-keyboard",
-  "version": "1.1.0",
+  "name": "vue-js-keyboard",
+  "version": "1.1.1",
   "main": "./dist/TouchKeyboard.common.js",
   "repository": {
     "type": "git",
