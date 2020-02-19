@@ -1,0 +1,129 @@
+@import "./val";
+
+.touch-keyboard {
+  display: flex;
+  font-weight: bold;
+
+  &-character {
+    margin-right: 20px;
+
+    &-line {
+      display: flex;
+
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: @touch-keyboard-key-size;
+        width: @touch-keyboard-key-size+16.5px;
+        border-right: @touch-keyboard-border;
+        border-top: @touch-keyboard-border;
+
+        &:first-child {
+          border-left: @touch-keyboard-border;
+        }
+
+        &:active {
+          background: @touch-keyboard-active-color;
+        }
+      }
+    }
+
+    &-line1 {
+      > div {
+        position: relative;
+
+        &:first-child, &:last-child {
+          &:after {
+            content: ' ';
+            border-bottom: 0.5px solid #d6d6d6;
+            display: inline-block;
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            bottom: -1px;
+            left: -1px;
+          }
+        }
+
+        &:last-child:after {
+          left: 1px;
+        }
+      }
+    }
+
+    &-line2 {
+      justify-content: center !important;
+
+      > div {
+        border-bottom: @touch-keyboard-border;
+      }
+    }
+
+    &-line3 {
+      > div {
+        position: relative;
+        border-top: none;
+
+        &:first-child:before {
+          content: ' ';
+          border-top: 0.5px solid #d6d6d6;
+          display: inline-block;
+          height: 1px;
+          width: 100%;
+          position: absolute;
+          top: -1px;
+          left: -1px;
+        }
+      }
+    }
+
+    &-line4 {
+      > div {
+        border-bottom: @touch-keyboard-border;
+      }
+    }
+
+    &-caps, &-symbol {
+      width: @touch-keyboard-key-size*2 !important;
+    }
+
+    &-blank {
+      flex: 1;
+    }
+  }
+
+  &-number {
+    width: @touch-keyboard-key-size * 3 + 3;
+
+    > div {
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: @touch-keyboard-key-size;
+      border-left: @touch-keyboard-border;
+      border-top: @touch-keyboard-border;
+
+      &:nth-child(3n), &:last-child {
+        border-right: @touch-keyboard-border;
+      }
+
+      &:active {
+        background: @touch-keyboard-active-color;
+      }
+    }
+
+    &-num {
+      width: @touch-keyboard-key-size;
+    }
+
+    &-del {
+      width: @touch-keyboard-key-size*2 + 1 !important;
+    }
+
+    &-del, &-zero {
+      border-bottom: @touch-keyboard-border;
+    }
+  }
+}
