@@ -2,6 +2,27 @@
   "name": "touch-keyboard",
   "version": "1.1.0",
   "main": "./dist/TouchKeyboard.common.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btboys/touch-keyboard"
+  },
+  "homepage": "https://www.gson.cn",
+  "keywords": [
+    "夏悸",
+    "gson",
+    "vue",
+    "vue.js",
+    "component",
+    "components",
+    "keyboard",
+    "ui"
+  ],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "author": "____′↘夏悸",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
