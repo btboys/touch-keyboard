@@ -1,19 +1,37 @@
-# touch_keyboard
+# TouchKeyboard
 
-## Project setup
+## Installation
 ```
-yarn install
+npm install touch-keyboard
 ```
+or
+```
+yarn add touch-keyboard
+```
+## Initialization
+```javascript
+import Vue from 'vue'
+import TouchKeyboard from 'touch-keyboard'
 
-### Compiles and hot-reloads for development
+Vue.use(TouchKeyboard);
 ```
-yarn serve
-```
+## Usage
+```vue
+<template>
+    <div id="app">
+        <h1>{{val}}</h1>
+        <touch-keyboard v-model="val"/>
+    </div>
+</template>
 
-### Compiles and minifies for production
-```
-yarn build
-```
+<script>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    export default {
+        data() {
+            return {
+                val: ''
+            }
+        },
+    }
+</script>
+```
