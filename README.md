@@ -2,16 +2,16 @@
 
 ## Installation
 ```
-npm install touch-keyboard
+npm install vue-js-keyboard
 ```
 or
 ```
-yarn add touch-keyboard
+yarn add vue-js-keyboard
 ```
 ## Initialization
 ```javascript
 import Vue from 'vue'
-import TouchKeyboard from 'touch-keyboard'
+import TouchKeyboard from 'vue-js-keyboard'
 
 Vue.use(TouchKeyboard);
 ```

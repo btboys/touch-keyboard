@@ -2,6 +2,7 @@
   "name": "vue-js-keyboard",
   "version": "1.1.1",
   "main": "./dist/TouchKeyboard.common.js",
+  "description": "a vue component for touch keyboard",
   "repository": {
     "type": "git",
     "url": "https://github.com/btboys/touch-keyboard"
