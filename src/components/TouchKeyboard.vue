@@ -23,6 +23,7 @@
         components: {NumberBoard, CharacterBoard},
         props: {
             regExp: RegExp,
+            value: String,
             i18n: {
                 type: Object,
                 default() {
@@ -33,6 +34,11 @@
         data() {
             return {
                 input: ''
+            }
+        },
+        watch: {
+            value(val) {
+                this.input = val;
             }
         },
         methods: {
