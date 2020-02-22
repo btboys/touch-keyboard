@@ -52,6 +52,7 @@
                     this.input = val;
                 }
                 this.$emit('input', this.input);
+                this.$emit('change', this.input);
             },
             getLocal(key) {
                 if (Object.keys(DEFAULT_I18N).includes(key)) {
