@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/btboys/touch-keyboard/compare/v1.1.3...v1.2.0) (2020-02-22)
+
+
+### Features
+
+* add change event ([b0c4846](https://github.com/btboys/touch-keyboard/commit/b0c48467d5ec7ba1139db390680e81fcb63b31eb))
+
+
+### Bug Fixes
+
+* fixed css bug ([89cf852](https://github.com/btboys/touch-keyboard/commit/89cf8529af2ef5577194e0601103c86c68ed5c48))
+
 ### [1.1.3](https://github.com/btboys/touch-keyboard/compare/v1.1.2...v1.1.3) (2020-02-19)
 
 
